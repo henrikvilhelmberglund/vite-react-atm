@@ -1,36 +1,36 @@
 Skapa en bankomat! 🏧
 
-☐ Skapa en ATM-komponent som du kan dölja/visa med ett knapptryck (med hjälp av state) i App.js.
+✔ Skapa en ATM-komponent som du kan dölja/visa med ett knapptryck (med hjälp av state) i App.js. @done(23-08-28 12:45)
 
-☐ ATM-komponenten ska ha knappar för att öka beloppet pengar användaren vill ta ut. Följande knappar ska finnas: +100, + 500, +1000. 
+✔ ATM-komponenten ska ha knappar för att öka beloppet pengar användaren vill ta ut. Följande knappar ska finnas: +100, + 500, +1000. @done(23-08-28 12:51)
 
-☐ Användaren ska kunna välja mellan SEK eller EURO.
+✔ Användaren ska kunna välja mellan SEK eller EURO. @done(23-08-28 12:54)
 
-☐ Du ska alltså ha två state i ATM-komponenten. Ett för totalbelopp och ett för valuta.
+✔ Du ska alltså ha två state i ATM-komponenten. Ett för totalbelopp och ett för valuta. @done(23-08-28 12:55)
 
-☐ Skapa en knapp där det står “Withdraw money”.
+✔ Skapa en knapp där det står “Withdraw money”. @done(23-08-28 12:56)
 
-☐ När du klickar på Withdraw money-knappen, skriv ut “Withdrawing money...”. Om amount är 0 när knappen klickas på, skriv ut “Please select amount”.
+✔ När du klickar på Withdraw money-knappen, skriv ut “Withdrawing money...”. Om amount är 0 när knappen klickas på, skriv ut “Please select amount”. @done(23-08-28 13:01)
 
-☐ Om amount inte är 0, skriv ut “Successfully withdrew (amount + currency) ! ”, och sätt amount-värdet till 0.
+✔ Om amount inte är 0, skriv ut “Successfully withdrew (amount + currency) ! ”, och sätt amount-värdet till 0. @done(23-08-28 13:01)
 
  
 
 OM ni blir klara, eller redan från början känner att ni vill ha något mer utmanande:
 
-☐ Skapa en deposit-knapp för att göra det möjligt att sätta in pengar i banken.
+✔ Skapa en deposit-knapp för att göra det möjligt att sätta in pengar i banken. @done(23-08-28 13:05)
 
-☐ Gör så att man kan ta ut pengar från kontot, men inte mer pengar än vad som finns i kontot. Dvs man behöver lägga in mer pengar, för att kunna ta ut mer.
+✔ Gör så att man kan ta ut pengar från kontot, men inte mer pengar än vad som finns i kontot. Dvs man behöver lägga in mer pengar, för att kunna ta ut mer. @done(23-08-28 13:08)
 
-☐ När ATM-komponenten renderas i DOM:en (mounting), skriv ut “Booting up ATM...ATM is ready!” i konsolen. (useEffect)
+✔ När ATM-komponenten renderas i DOM:en (mounting), skriv ut “Booting up ATM...ATM is ready!” i konsolen. (useEffect) @done(23-08-28 13:11)
 
-☐ När totalbelopp ändrar värde, skriv ut “Current amount: {amount}” i konsolen. (useEffect).
+✔ När totalbelopp ändrar värde, skriv ut “Current amount: {amount}” i konsolen. (useEffect). @done(23-08-28 13:11)
 
-☐ Extra: Lägg till funktionalitet för att ändra valuta mellan SEK och EURO (använd state). När valutan ändras, skriv ut “Chosen currency:{currency}”. (useEffect)
+✔ Extra: Lägg till funktionalitet för att ändra valuta mellan SEK och EURO (använd state). När valutan ändras, skriv ut “Chosen currency:{currency}”. (useEffect) @done(23-08-28 13:12)
 
-☐ Extra: När ATM-komponenten tas bort från DOM:en (unmounting), skriv ut ”ATM shutting down…”. (useEffect)
+✔ Extra: När ATM-komponenten tas bort från DOM:en (unmounting), skriv ut ”ATM shutting down…”. (useEffect) @done(23-08-28 13:15)
 
-☐ Extra (Svår): Lägg till stöd för valutaomväxling. 10 SEK = 1 EURO vid insättning och uttag.
+✔ Extra (Svår): Lägg till stöd för valutaomväxling. 10 SEK = 1 EURO vid insättning och uttag. @done(23-08-28 13:26)
 
 GLHF!
 
