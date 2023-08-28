@@ -5,6 +5,8 @@ const ATM = () => {
   const [funds, setFunds] = useState(300);
   const [currency, setCurrency] = useState("SEK");
   const [infoText, setInfoText] = useState("");
+  // chatgpt thingy below
+  const [shouldRunCurrencyEffect, setShouldRunCurrencyEffect] = useState(false); // New state variable
 
   useEffect(() => {
     console.log("Booting up ATM...ATM is ready!");
@@ -16,6 +18,11 @@ const ATM = () => {
     console.log(`Current amount: ${amount}`);
   }, [amount]);
   useEffect(() => {
+    if (!shouldRunCurrencyEffect) {
+      // Skip the effect on initial mount
+      setShouldRunCurrencyEffect(true);
+      return;
+    }
     console.log(`Chosen currency: ${currency}`);
     setAmount((prevState) => {
       if (currency === "SEK") return prevState * 10;
